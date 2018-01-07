@@ -1,0 +1,47 @@
+/*primer pantalla*/
+body {
+  margin: 0;
+  padding: 0;
+  background: url("../assets/images/dawn.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed; /*propiedad para que la imagen permanesca fija*/
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+img {
+  width: 90%;
+}
+
+.container {
+  margin: 0 auto;
+  position: absolute;
+  bottom: 10px;
+  left: 20%;
+  right: 20%;
+}
+
+/*segunda pantalla*/
+@media screen and (max-width: 900px) {
+  body {
+    background-image: url(../assets/images/night.jpg);
+  }
+
+  img {
+    content: url("../assets/images/kitten-medium.png");
+  }
+}
+
+/* ultima pantalla */
+
+@media screen and (max-width: 600px) {
+  /* Modifica url de imagen de fondo */
+  body {
+    background-image: url(../assets/images/sunny-day.jpg);
+  }
+  img {
+    content: url("../assets/images/kitten-small.png");
+  }
+}
